@@ -1,0 +1,103 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/ui-libraries/main/drawing/void/source.lua"))()
+
+local watermark = library:Watermark("LoveFay | 60FPS+ | v1 | dev")
+-- watermark:Set("Watermark Set")
+-- watermark:Hide() -- toggles watermark
+
+local main = library:Load{
+    Name = "Ice Hub V.1",
+    SizeX = 600,
+    SizeY = 650,
+    Theme = "Midnight",
+    Extension = "json", -- config file extension
+    Folder = "Ice Hub V.1" -- config folder name
+}
+
+-- library.Extension = "txt" (config file extension)
+-- library.Folder = "config folder name"
+
+local tab = main:Tab("Autoskill")
+
+local section = tab:Section{
+    Name = "Skill",
+    Side = "Left"
+}
+
+local label = section:Label("Quake")
+
+--label:Set("Label Set")
+
+section:Button{
+    Name = "AutoSkill_1",
+    Callback  = function()
+        while wait do
+            local A_1 = "Quake"
+            local A_2 = "Fist"
+            local A_3 =
+            {
+            }
+            local Event = game:GetService("ReplicatedStorage").Replicator
+            Event:InvokeServer(A_1, A_2, A_3)
+            end
+    end
+}
+
+section:Button{
+    Name = "AutoSkill_2",
+    Callback  = function()
+        while wait do
+            local A_1 = "Quake"
+            local A_2 = "Eruption"
+            local A_3 =
+            {
+            }
+            local Event = game:GetService("ReplicatedStorage").Replicator
+            Event:InvokeServer(A_1, A_2, A_3)
+            end
+    end
+}
+
+section:Button{
+    Name = "AutoSkill_3",
+    Callback  = function()
+        while wait do
+            local A_1 = "Quake"
+            local A_2 = "Slam"
+            local A_3 =
+            {
+            }
+            local Event = game:GetService("ReplicatedStorage").Replicator
+            Event:InvokeServer(A_1, A_2, A_3)
+            end
+    end
+}
+
+section:Button{
+    Name = "AutoSkill_4",
+    Callback  = function()
+        while wait do
+            local A_1 = "Quake"
+            local A_2 = "IslandShake"
+            local A_3 =
+            {
+            }
+            local Event = game:GetService("ReplicatedStorage").Replicator
+            Event:InvokeServer(A_1, A_2, A_3)
+            end
+    end
+}
+
+section:Button{
+    Name = "AutoSkill_5",
+    Callback  = function()
+        while wait do
+            local A_1 = "Quake"
+            local A_2 = "Seaquake"
+            local A_3 =
+            {
+            }
+            local Event = game:GetService("ReplicatedStorage").Replicator
+            Event:InvokeServer(A_1, A_2, A_3)
+            end
+    end
+}
